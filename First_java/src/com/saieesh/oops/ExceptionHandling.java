@@ -16,6 +16,7 @@ public class ExceptionHandling {
         }
         finally {
             System.out.println("in the finally block");
+            System.out.println("Finally block is always executed at any cost");
         }
 
     }
