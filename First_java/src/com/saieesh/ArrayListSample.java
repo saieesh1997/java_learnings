@@ -1,26 +1,56 @@
 package com.saieesh;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListSample {
     public static void main(String[] args) {
-//        String[] stringArray =new String[10];
-//        stringArray[0]="karwar";
-//        System.out.println(stringArray[0]);
+        ArrayList<Integer> list = new ArrayList<>();
+//        ArrayList<String> list1 = new ArrayList<>();
 
-        //Array list
+//        add elements
 
-        ArrayList<String> heroes = new ArrayList<String>();
+        list.add(0);
+        list.add(1);
+        list.add(2);
+        list.add(3);
 
-        heroes.add("Hulk");
-        heroes.add("Iron Man");
-        heroes.add("Batman");
+        System.out.println(list);
 
-        System.out.println("My superhero is : "+heroes.get(0));
+        //get elements
+        System.out.println(list.get(0));
+        System.out.println(list.get(2));
 
-        heroes.add(0,"ChotaBheem");
+        //add element in between
 
-        System.out.println("My superhero is : "+heroes.get(0));
-        System.out.println("My superhero is : "+heroes.get(1));
+        list.add(2,1);
+
+        System.out.println(list);
+
+        //set element
+
+        list.set(0,5);
+
+        System.out.println(list);
+
+        //Delete Element
+
+        list.remove(3);
+        System.out.println(list);
+
+        //Array list size
+
+        System.out.println(list.size());
+
+        //Loops
+        System.out.println("printing arraylist using loops");
+        for(int i=0;i<list.size();i++){
+            System.out.println(list.get(i));
+        }
+
+        //sorting function
+        Collections.sort(list);
+        System.out.println(list);
+
     }
 }
